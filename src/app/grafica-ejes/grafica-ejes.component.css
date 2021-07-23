@@ -1,0 +1,19 @@
+h1{
+    color: #fff
+}
+h1{
+    text-align: center;
+}
+.header{
+    padding: .25rem .5rem;
+    background-color: #12161C;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.variad{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+

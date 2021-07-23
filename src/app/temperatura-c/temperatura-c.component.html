@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="col-3"></div>
+  <div class="col-6 temp">
+    <ngx-charts-linear-gauge 
+        [view]="view" 
+        [scheme]="colorScheme" 
+        [value]="value" 
+        [previousValue]="previousValue"  
+          (select)="onSelect($event)" 
+          [units]="units">
+    </ngx-charts-linear-gauge>
+  </div>
+  <div class="col-3"></div>
+</div>

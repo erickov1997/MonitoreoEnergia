@@ -1,0 +1,38 @@
+<h1>Monitoreo Vibración</h1>
+
+<div class="row">
+    <div class="col-2"></div>
+    <div class="col-8" style="height:450px">
+        <ngx-charts-line-chart  [scheme]="colorScheme" 
+        [legend]="legend" 
+        [showXAxisLabel]="showXAxisLabel"
+        [showYAxisLabel]="showYAxisLabel" 
+        [xAxis]="true" [yAxis]="true" 
+        [autoScale]="true" 
+        [xAxisLabel]="xAxisLabel"
+        [yAxisLabel]="yAxisLabel" 
+        [results]="multi" (select)="onSelect($event)" (activate)="onActivate($event)"
+        (deactivate)="onDeactivate($event)" style="fill: #d1d1d1;" [timeline]="true">
+    </ngx-charts-line-chart>  
+    </div>
+    <div class="col 2"></div>
+</div>
+<div class="row var">
+    <div class="col-3"></div>
+    <div class="col-6 variad">
+        <ngx-charts-number-card 
+            [view]="view" 
+            [scheme]="colorScheme" 
+            [results]="single" (select)="onSelect($event)"
+            (activate)="onActivate($event)" 
+            [cardColor]="cardColor" 
+            (select)="onSelect($event)"
+            (deactivate)="onDeactivate($event)" style="fill: #d1d1d1;">
+
+    </ngx-charts-number-card>
+  </div>
+  <div class="col-3"></div>
+
+</div>
+
+

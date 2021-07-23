@@ -1,0 +1,11 @@
+.wrapper-main{
+    margin: auto;
+    width: 90%;
+}
+
+#graf{
+    display: flex;
+    justify-content: center;
+}
+
+
