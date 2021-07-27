@@ -17,3 +17,7 @@ h1{
     flex-wrap: wrap;
 }
 
+ngx-charts-number-card {
+    display: flex;
+}
+

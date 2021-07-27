@@ -9,6 +9,11 @@ import { GraficaEjesComponent } from './grafica-ejes/grafica-ejes.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { VariadorComponent } from './variador/variador.component';
 import { TemperaturaCComponent } from './temperatura-c/temperatura-c.component';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatListModule} from '@angular/material/list';
+import { SidenavComponent } from './sidenav/sidenav.component';
+import {DemoMaterialModule } from './material-module';
 
 const config: SocketIoConfig = { url: 'http://localhost:3000', options: {} };
 
@@ -18,14 +23,19 @@ const config: SocketIoConfig = { url: 'http://localhost:3000', options: {} };
     GraficaEjesComponent,
     NavbarComponent,
     VariadorComponent,
-    TemperaturaCComponent
+    TemperaturaCComponent,
+    SidenavComponent
   ],
   imports: [
     NgxChartsModule,
     BrowserAnimationsModule,
     SocketIoModule.forRoot(config),
     BrowserModule,
-    AppRoutingModule
+    MatSidenavModule,
+    DemoMaterialModule,
+    MatListModule,
+    AppRoutingModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

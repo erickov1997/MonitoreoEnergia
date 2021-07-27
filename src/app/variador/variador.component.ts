@@ -68,27 +68,27 @@ export class VariadorComponent implements OnInit {
       this.single2 = [
         {
           "name": "Fase 1A",
-          "value": dataFase1A.valor1
+          "value": dataFase1A.valor1/10
         },
         {
           "name": "Fase 2A",
-          "value": dataFase1A.valor2
+          "value": dataFase1A.valor2/10
         },
         {
           "name": "Fase 3A",
-          "value": dataFase1A.valor3
+          "value": dataFase1A.valor3/10
         },
         {
           "name": "volts L1-L2",
-          "value": dataFase1A.valor4
+          "value": dataFase1A.valor4/10
         },
         {
           "name": "volts L2-L3",
-          "value": dataFase1A.valor5
+          "value": dataFase1A.valor5/10
         },
         {
           "name": "Hz",
-          "value": dataFase1A.valor6
+          "value": dataFase1A.valor7/10
         }
         
       ]
