@@ -2,13 +2,17 @@
   <h2>Monitoreo de Energia</h2>
 </div>
 <div class="row">
-  <div class="col-3"></div>
-  <div class="col-6 variador">
-    <ngx-charts-number-card [view]="view" [scheme]="colorScheme" [results]="single2" (select)="onSelect($event)"
-      (activate)="onActivate($event)" [cardColor]="cardColor" (select)="onSelect($event)"
-      (deactivate)="onDeactivate($event)" style="fill: #d1d1d1;">
+  <div class="col-4"></div>
+  <div class="col-4 variador">
+    <ngx-charts-number-card 
+      [view]="view" 
+      [scheme]="colorScheme" 
+      [results]="single2" (select)="onSelect($event)"
+        (activate)="onActivate($event)" 
+      [cardColor]="cardColor" (select)="onSelect($event)"
+        (deactivate)="onDeactivate($event)" style="fill: #d1d1d1;">
 
     </ngx-charts-number-card>
   </div>
-  <div class="col-3"></div>
+  <div class="col-4"></div>
 </div>

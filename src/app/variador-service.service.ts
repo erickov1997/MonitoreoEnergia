@@ -18,8 +18,8 @@ export class VariadorServiceService {
         })
 
         this.socket.on('variador', (data:number) => { //TODO Nuestro evento!!
-          console.log('Llego data variador :)');
-          console.log(data)
+          /*console.log('Llego data variador :)');
+          console.log(data)*/
           observer.next(data)
         })
 

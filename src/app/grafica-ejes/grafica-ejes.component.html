@@ -1,7 +1,8 @@
 <h1>Monitoreo Vibración</h1>
 
 <div class="row">
-    <div class="col-2"></div>
+    <div class="col-2">
+    </div>
     <div class="col-8" style="height:450px">
         <ngx-charts-line-chart  [scheme]="colorScheme" 
         [legend]="legend" 
@@ -17,10 +18,11 @@
     </div>
     <div class="col 2"></div>
 </div>
-<div class="row var">
+<div class="row var mt-5">
     <div class="col-3"></div>
     <div class="col-6 variad">
         <ngx-charts-number-card 
+        (window:resize)="onResize($event)"
             [view]="view" 
             [scheme]="colorScheme" 
             [results]="single" (select)="onSelect($event)"

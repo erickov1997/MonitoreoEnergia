@@ -19,7 +19,7 @@ export class CustomSocketService {
 
         this.socket.on('push', (data: string) => { //TODO Nuestro evento!!
           //console.log('Llego la data! :)');
-          console.log(data);
+          //console.log(data);
           observer.next(data)
 
         })

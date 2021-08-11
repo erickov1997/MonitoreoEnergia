@@ -33,6 +33,7 @@ export class GraficaEjesComponent implements OnInit {
   cardColor: string = '#232837';
 
   constructor(private customSocket: CustomSocketService) { 
+    this.view = [innerWidth / 3.5, 200];
     this.multi =[
       {
         "name": "ejex",
@@ -141,5 +142,9 @@ export class GraficaEjesComponent implements OnInit {
   onDeactivate(data:any): void {
     //console.log('Deactivate', JSON.parse(JSON.stringify(data)));
   }
+
+  onResize(event:any) {
+    this.view = [event.target.innerWidth /3, 200];
+}
 
 }

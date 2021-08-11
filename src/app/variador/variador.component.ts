@@ -115,4 +115,8 @@ export class VariadorComponent implements OnInit {
     console.log('Deactivate', JSON.parse(JSON.stringify(data)));
 
   }
+
+  /*onResize(event:any) {
+    this.view = [event.target.innerWidth / 1.2, 400];
+}*/
 }
